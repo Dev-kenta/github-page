@@ -1,0 +1,37 @@
+<form class="formrun" action="https://stg.form.run/api/v1/r/uz42ca843yvkk3yofpwllnbz" method="post">
+  <!-- ↓You can add/change fields. -->
+  <div>
+    <label>Name</label>
+    <input name="Name" type="text">
+  </div>
+
+  <div>
+    <label>Email*</label>
+    <input name="Email" type="text" data-formrun-type="email" data-formrun-required>
+    <div data-formrun-show-if-error="Email">Please enter your email address correctly.</div>
+  </div>
+
+  <div>
+    <label>Message*</label>
+    <textarea name="Message" data-formrun-required></textarea>
+    <div data-formrun-show-if-error="Message">Please enter.</div>
+  </div>
+
+  <div>
+    <label>Consent to use personal information*</label>
+    <input type="checkbox" name="AgreePersonalInformation" data-formrun-required>
+    <div data-formrun-show-if-error=""AgreePersonalInformation">"Please check the box.</div>
+  </div>
+  <!-- <div style="display: none">
+    <input type="hidden" id="data_code" name="data[code]" value="1234556"></div> -->
+
+  <!-- "Tags for blocking bot submissions" -->
+  <div class="_formrun_gotcha">
+    <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+    <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+    <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+  </div>
+
+  <button type="submit" data-formrun-error-text="Some required fields are missing." data-formrun-submitting-text="Submitting…">Submit</button>
+</form>
+<script src="https://sdk-stg.form.run/js/v2/formrun.js"></script>
